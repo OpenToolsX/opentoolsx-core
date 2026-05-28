@@ -1,8 +1,10 @@
 # OpenToolsX Tool Contract v1
 
-A tool in OpenToolsX must follow this structure:
+## What is a Tool?
+A tool is a self-contained executable unit defined by a tool.json file.
 
-## Required fields (tool.json)
+## Required structure
+Each tool MUST contain:
 - id
 - name
 - version
@@ -11,11 +13,14 @@ A tool in OpenToolsX must follow this structure:
 - runtime
 
 ## Execution rule
-A tool is executed by:
-registry → resolving tool → runtime executing entryPoint
+A tool is executed ONLY through:
+registry → resolve tool → runtime executes entryPoint
 
-## Runtime support (v1)
+## Supported runtime (v1)
 - python only
 
-## Entry point rule
-entryPoint must be a valid executable file inside the tool folder
+## Registry rule
+If a tool is not listed in registry/tools.json, it does not exist in the system
+
+## EntryPoint rule
+entryPoint MUST be a valid executable file inside the tool folder
