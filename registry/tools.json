@@ -1,1 +1,11 @@
-
+{
+  "tools": [
+    {
+      "id": "sample-tool",
+      "name": "Sample Tool",
+      "version": "1.0.0",
+      "path": "tools/sample-tool",
+      "entryPoint": "main.py"
+    }
+  ]
+}
