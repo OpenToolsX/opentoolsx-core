@@ -1,8 +1,12 @@
 {
   "type": "object",
+  "required": ["id", "name", "version", "path", "entryPoint", "runtime"],
   "properties": {
+    "id": { "type": "string" },
     "name": { "type": "string" },
     "version": { "type": "string" },
-    "entryPoint": { "type": "string" }
+    "path": { "type": "string" },
+    "entryPoint": { "type": "string" },
+    "runtime": { "type": "string" }
   }
 }
