@@ -3,9 +3,9 @@ import subprocess
 import os
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
-REGISTRY_PATH = os.path.join(ROOT, "registry", "tools.json")
+REGISTRY = os.path.join(ROOT, "registry", "tools.json")
 
-with open(REGISTRY_PATH) as f:
+with open(REGISTRY) as f:
     registry = json.load(f)
 
 tool = registry["tools"][0]
