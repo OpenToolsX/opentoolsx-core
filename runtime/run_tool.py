@@ -1,11 +1,18 @@
 import json
 import subprocess
+import os
 
-with open("../registry/tools.json") as f:
+ROOT = os.path.dirname(os.path.dirname(__file__))
+
+registry_path = os.path.join(ROOT, "registry", "tools.json")
+
+with open(registry_path) as f:
     registry = json.load(f)
 
 tool = registry["tools"][0]
-path = f"../{tool['path']}/{tool['entryPoint']}"
 
-print("Running:", tool["name"])
-subprocess.run(["python", path])
+tool_path = os.path.join(ROOT, tool["path"], tool["entryPoint"])
+
+print(f"Running tool: {tool['name']}")
+
+subprocess.run(["python3", tool_path])
