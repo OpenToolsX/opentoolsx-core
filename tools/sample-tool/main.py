@@ -1,1 +1,1 @@
-print("Hello from OpenToolsX Sample Tool")
+print("OpenToolsX Sample Tool Running")
