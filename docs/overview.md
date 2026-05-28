@@ -1,3 +1,3 @@
-# OpenToolsX Overview
+# OpenToolsX Core
 
-This repository is the core registry for engineering desktop tools.
+Registry-based engineering tool system for desktop design applications.
